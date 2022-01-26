@@ -2,25 +2,10 @@
 
 CI/CD with Jenkins using Pipelines and Docker
 
-This is the course material for the Jenkins Course on Udemy ([Learn DevOps: CI/CD with Jenkins using Pipelines and Docker](https://www.udemy.com/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/?couponCode=JENKINS_GIT))
-
-
 # Recources
 
 Procedure Document
 Learn DevOps: Jenkins - Procedure document
-Practical details
-Github repository: https://github.com/wardviaene/jenkins-course
-
-Other Repos used in this course:
-
-https://github.com/wardviaene/docker-demo
-
-https://github.com/wardviaene/jenkins-docker
-
-Facebook group: https://www.facebook.com/groups/840062592768074/
-
-DigitalOcean free $10 coupon: https://m.do.co/c/007f99ffb902
 
 DigitalOcean Installation Procedure
 This is just a summary, for the demo, see lecture 5: Demo - Jenkins Installation
@@ -29,14 +14,10 @@ Summary
 Create DigitalOcean account
 
 Create Droplet
-
 Jenkins install
-
 Configuration until you hit main screen
 
- 
-
-Full list of installation parameters: see https://hub.docker.com/_/jenkins/
+ Full list of installation parameters: see https://hub.docker.com/_/jenkins/
 
 Create DigitalOcean Account
 Sign-up using https://m.do.co/c/007f99ffb902 to get $10 in credit to use on a droplet
@@ -49,6 +30,7 @@ Choose for ubuntu 20.04.x
 You can choose another system, but the instructions provided to install docker will only work on ubuntu 20.04
 
 Install Docker
+```
 $ sudo apt-get update
 $ sudo apt-get install \
     apt-transport-https \
@@ -62,6 +44,7 @@ $ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
  See also https://docs.docker.com/engine/install/ubuntu/
 
 Install Jenkins
