@@ -89,3 +89,8 @@ Download the package from https://jenkins.io/download/ and follow the instructio
 
 Resources for this lecture
 
+
+now you can gain access to Jenkins via:
+```
+http://'$(curl -s ifconfig.co)':8080
+```
